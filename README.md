@@ -77,6 +77,20 @@ SecRule REQUEST_URI "@rx ^/\.well-known/acme-challenge(/|$)" \
     "id:9005002,phase:1,deny,status:403,log,chain"
     SecRule REQUEST_METHOD "!^(GET|HEAD)$"
 # ===========================================================================
+SecRule REMOTE_ADDR "@ipMatch 18.204.159.253" \
+   "id:1001001,phase:1,pass,nolog,ctl:ruleRemoveById=930201,ctl:ruleRemoveById=930240"
+
+SecRule REMOTE_ADDR "@ipMatch 35.157.144.199" \
+   "id:1001002,phase:1,pass,nolog,ctl:ruleRemoveById=930201,ctl:ruleRemoveById=930240"
+
+SecRule REMOTE_ADDR "@ipMatch 34.196.51.17" \
+   "id:1001003,phase:1,pass,nolog,ctl:ruleRemoveById=930201,ctl:ruleRemoveById=930240"
+
+SecRule REMOTE_ADDR "@ipMatch 54.227.51.40" \
+   "id:1001004,phase:1,pass,nolog,ctl:ruleRemoveById=930201,ctl:ruleRemoveById=930240"
+
+SecRule REMOTE_ADDR "@ipMatch 3.93.131.0" \
+   "id:1001005,phase:1,pass,nolog,ctl:ruleRemoveById=930201,ctl:ruleRemoveById=930240"
 
 # Debe ir ANTES de 930201/930240
 SecRule REQUEST_URI "@rx ^/sapp-wp-signon\.php(?:$|\?)" \
