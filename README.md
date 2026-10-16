@@ -1,4 +1,4 @@
-genial — acá va el **Baseline WAF Hosting WP — v1.0 — 2025-08-11** listo para pegar.
+**Baseline WAF Hosting WP — v1.0 — 2025-08-11** listo para pegar.
 (Colócalo donde indico para que **no se pierda** con updates.)
 
 # Apache (global, persistente)
@@ -229,7 +229,3 @@ Ejemplo (si fuera admin-ajax/REST):
   ```
 
 ---
-
-Si querés, me pasás **un caso nuevo** (URL exacta del reporte) y te digo cuál de estas reglas lo habría bloqueado (o te agrego una nueva, igual de **acotada** y **sin romper**). No voy a pedirte que “pruebes a ver si rompe”: te la doy ya contrastada contra rutas de WordPress.
-
-
